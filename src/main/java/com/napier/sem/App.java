@@ -215,7 +215,7 @@ public class App
                             "AND salaries.to_date = '9999-01-01'\n" +
                             "AND titles.to_date = '9999-01-01'\n" +
                             "AND titles.title = '" + role + "' \n" +
-                            "ORDER BY employees.emp_no ASC";
+                            "ORDER BY employees.emp_no ASC LIMIT 500";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract employee information
